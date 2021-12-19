@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <i id="elm">내용</i>
+
+</body>
+<script>
+    var elm = document.getElementById('elm');
+    elm.insertAdjacentHTML('beforebegin', '<span>beforebegin-</span>')
+    elm.insertAdjacentHTML('afterbegin', '<span>afterbegin-</span>')
+    elm.insertAdjacentHTML('beforeend', '<span>beforeend-</span>')
+    elm.insertAdjacentHTML('afterend', '<span>afterend-</span>')
+
+    console.log(document.body.innerHTML)
+
+</script>
+
+</html>
