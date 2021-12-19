@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#">HI</a>
+    <script>
+        // nodeValue 는 text, comment 제외하면 null 반환한다.
+        console.log(document.doctype.nodeValue)
+        console.log(document.nodeValue)
+        console.log(document.createDocumentFragment().nodeValue)
+        console.log(document.querySelector('a').nodeValue)
+
+        console.log(document.querySelector('a').firstChild.nodeValue);
+
+    </script>
+</body>
+</html>
