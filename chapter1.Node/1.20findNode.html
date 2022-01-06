@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul><!-- comment -->
+        <li id='A'></li>
+        <li id='B'></li>
+        <!-- coomment!--></ul>
+</body>
+<script>
+    let temp = document.getElementById('A').parentNode;
+    let parentNode = temp.parentNode;
+    console.log(parentNode);
+    console.log(temp.firstChild.nodeName)
+    console.log(temp.lastChild.nodeName)
+    console.log(document.querySelector('#A').nextSibling.nodeName)
+    // 엘레멘트만을 검색 할 경우
+    console.log(parentNode.firstElementChild)
+    console.log(temp.firstElementChild)
+    console.log(temp.lastElementChild)
+    console.log(temp.firstElementChild.nextElementSibling)
+    console.log(temp.children)
+
+</script>
+</html>
