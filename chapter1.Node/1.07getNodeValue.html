@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document </title>
 </head>
 <body>
-    <a href="#">HI</a>
+    <a href="#">HI<!-- tests --></a>
     <script>
         // nodeValue 는 text, comment 제외하면 null 반환한다.
         console.log(document.doctype.nodeValue)
@@ -16,7 +16,7 @@
         console.log(document.querySelector('a').nodeValue)
 
         console.log(document.querySelector('a').firstChild.nodeValue);
-
+        console.log(document.querySelector('a').lastChild.nodeValue)
     </script>
 </body>
 </html>

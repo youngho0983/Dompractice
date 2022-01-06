@@ -7,11 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="#">HI</a>
-    
+    <a href="#">HI</a> // document.querySeleetor() => 첫번째 것 확인함
+    <a href="#2">gool</a>
     <script>
       
     var nodeAnchor = document.querySelector('a');
+    //nodeAnchor.draggable = false;
+    console.log(nodeAnchor);
     var props = [];
     for(var key in nodeAnchor) {
         props.push(key);
