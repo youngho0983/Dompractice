@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+    </ul>
+    <div id='area1'></div>
+    <div id='area2'></div>
+</body>
+<script>
+    let temp = document.querySelector('ul');
+    console.log(temp);
+    let clondeElement = temp.cloneNode();
+    console.log(clondeElement);
+    let cloneAll = temp.cloneNode(true);
+    console.log(cloneAll);
+    document.getElementById('area1').appendChild(clondeElement);
+    document.getElementById('area2').appendChild(cloneAll);
+</script>
+</html>

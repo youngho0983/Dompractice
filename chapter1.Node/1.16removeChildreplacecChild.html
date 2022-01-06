@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='A'>HI</div>
+    <div id='B'>DUDE</div>
+    <div id='C'>Man <!-- yo --> man</div>
+</body>
+<script>
+    var element1 = document.getElementById('A');
+    var element2 = document.getElementById('B');
+    var element3 = document.getElementById('C');
+
+
+    element1.remove()
+    element2.parentElement.removeChild(element2);
+    element3.removeChild(element3.firstChild);
+    element3.removeChild(element3.firstChild);
+</script>
+</html>

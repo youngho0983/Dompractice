@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="A">HI</div>
+    <div id="B">DUDE</div>
+</body>
+<script>
+    let element1 = document.getElementById('A');
+    let element2 = document.getElementById('B');
+    let elementNodeSpan = document.createElement('span');
+    elementNodeSpan.textContent = 'newContent';
+    element1.parentNode.replaceChild(elementNodeSpan, element1);
+    let text1 = document.createTextNode('hello');
+
+    element2.replaceChild(text1,element2.firstChild);
+
+</script>
+</html>
