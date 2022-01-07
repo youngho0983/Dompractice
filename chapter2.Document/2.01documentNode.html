@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    console.log(window.document.constructor);
+    console.log(document.constructor);
+    console.log(window.document.nodeType);
+    console.log(document.nodeType);
+
+    //아하 window 가 숨겨있던거구나.
+    // html 문서 하나 더 만들어버리기
+    let temp = document.implementation.createHTMLDocument();
+    console.log(temp);
+</script>
+</html>
