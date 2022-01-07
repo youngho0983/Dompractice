@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='area1' style="width: 100px; height: 100px; background-color: rebeccapurple;"></div>
+    <div id='area2' style="width: 100px; height: 100px; background-color: red;"></div>
+    <div id='area2'></div>
+    <script>
+        document.onclick = function(e) {
+            console.log(document.hasFocus());
+            console.log(e.target);
+        }
+
+        setTimeout(function(){console.log(document.hasFocus())},5000);
+    </script>
+</body>
+</html>
