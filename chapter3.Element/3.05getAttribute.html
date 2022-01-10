@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" title="title" data-foo="dataFoo" class="yes" aria-colspan="margin:0" foo="boo">hi</a>
+</body>
+<script>
+    let atag = document.querySelector('a');
+    /*console.log(atag.getAttribute('title'));
+    console.log(atag.dataset.foo);
+    console.log(atag.classList);
+    console.log(atag.className); */
+    
+    var attr = document.querySelector('a').attributes;
+    console.log(attr);
+
+    console.log(attr.length)
+    for ( var i = 0; i < attr.length ; i++ ) {
+        console.log(attr[i].nodeName + ": " + attr[i].nodeValue)
+    }
+</script>
+</html>
