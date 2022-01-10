@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" title="title" data-foo="dataFoo" 
+    class="yes" aria-colspan="margin:0" foo="boo" hidden="hidden">hi</a>
+</body>
+<script>
+    let atag = document.querySelector('a');
+    let attributes = atag.attributes;
+    console.log(attributes);
+    atag.removeAttribute('href')
+    atag.removeAttribute('title')
+    atag.removeAttribute('style')
+    atag.removeAttribute('data-foo')
+    atag.removeAttribute('class')
+    atag.removeAttribute('foo') // 사용자 정의 attribute
+    atag.removeAttribute('hidden') // boolean attribute
+    
+    console.log(attributes)
+
+    // attribute 설정
+    atag.setAttribute('href','#');
+    atag.setAttribute('title','title');
+    atag.setAttribute('style','margin:0;');
+    atag.setAttribute('data-foo','data-foo');
+    atag.setAttribute('class','yes');
+    atag.setAttribute('foo','boo');
+    atag.setAttribute('hidden', 'hidden')
+
+
+    // attribute 가져오기
+
+    console.log(atag.getAttribute('href'))
+
+</script>
+</html>

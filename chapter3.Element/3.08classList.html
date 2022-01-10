@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" title="title" data-foo="dataFoo" style="margin:0" class="yes no good" goo></a>
+    
+</body>
+<script>
+    var tag = document.querySelector('a');
+    console.log(tag.classList);
+    console.log(tag.className)
+    tag.classList.add('hello');
+    tag.classList.remove('yes');
+    console.log(tag.classList);
+
+    console.log(tag.classList.toggle('yes'));
+    console.log(tag.classList.contains('yes'));
+    console.log(tag.classList.toggle('yes'));
+    console.log(tag.classList.contains('yes'));
+</script>
+</html>
