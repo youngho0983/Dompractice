@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <ul>
+        <li class="liClass">hello</li>
+        <li class="liClass">big</li>
+        <li class="liClass">bad</li>
+        <li class="liClass">world</li>
+    </ul>
+    </div>
+    <ul>
+        <li class="liClass">Helo</li>
+    </ul>
+</body>
+<script>
+var div = document.querySelector('div');
+console.log(div.querySelector);
+console.log(div.querySelector('ul'));
+console.log(div.querySelectorAll('li'));
+console.log(div.getElementsByTagName('li'));
+console.log(div.getElementsByClassName('liClass'))
+</script>
+</html>

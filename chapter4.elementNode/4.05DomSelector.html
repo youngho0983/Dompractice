@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+</body>
+<script>
+    var divElm = document.createElement('div');
+    var ulElm = document.createElement('ul');
+    var liElm = document.createElement('li');
+    
+    liElm.setAttribute('class','liClass');
+    ulElm.appendChild(liElm);
+    divElm.append(ulElm)
+    document.querySelector('body').appendChild(divElm);
+var div = document.querySelector('div');
+console.log(div.querySelector);
+console.log(div.querySelector('ul'));
+console.log(div.querySelectorAll('li'));
+console.log(div.getElementsByTagName('li'));
+console.log(div.getElementsByClassName('liClass'))
+</script>
+</html>
