@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+</body>
+<script>
+var divStyle = document.querySelector('div').style;
+
+divStyle.backgroundColor = 'red';
+divStyle.border = '1px solid black';
+divStyle.width = '100px'
+divStyle.height = '100px'
+// - 대신 카멜로 처리됨.
+console.log(divStyle.backgroundColor)
+console.log(divStyle.border);
+
+// 속성 제거
+divStyle.backgroundColor = '';
+</script>
+</html>

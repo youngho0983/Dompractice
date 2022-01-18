@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*스타일 테그에 있는건 건드릴 수 없구나.*/
+        div{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    </div>
+</body>
+<script>
+    var div = document.querySelector('div');
+    var divStyle = div.style;
+    divStyle.cssText= 'background-color:red ; border : 1px solid black; height:100px ; width:100px;'
+    console.log(divStyle.cssText);
+    div.setAttribute('style' , 'border: 1px solid black ; background-color : red; width: 100px; height: 100px')
+    div.removeAttribute('style');
+</script>
+</html>
