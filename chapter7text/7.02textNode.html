@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hi</p>
+</body>
+<script>
+    var text = document.querySelector('p').firstChild;
+
+    console.log(Object.keys(text).sort());
+
+    var textPropertiesIncludeInherited = [] ;
+    for(var p in text) {
+        textPropertiesIncludeInherited.push(p)
+    }
+    console.log(textPropertiesIncludeInherited.sort());
+
+    var textPropertieInherited = [] ;
+    for(var p in text) {
+        if(!text.hasOwnProperty(p)) {
+            textPropertieInherited.push(p);
+        }
+    }
+    console.log(textPropertieInherited);
+
+
+    /*
+    textContent
+    splitText()
+    appendData()
+    deleteData()
+    insertData()
+    replaceData()
+    subStringData()
+    normalize()
+    data 
+    document.creataTextNode()
+    */
+</script>
+</html>
