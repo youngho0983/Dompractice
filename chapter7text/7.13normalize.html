@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+</body>
+<script>
+    var pElementNode = document.createElement('p');
+    var textNodeHi = document.createTextNode('hi ');
+    var textNodeCopy = document.createTextNode('copy')
+    pElementNode.appendChild(textNodeHi);
+    pElementNode.appendChild(textNodeCopy);
+
+    document.querySelector('div').appendChild(pElementNode);
+
+    console.log(document.querySelector('p').childNodes);
+    console.log(document.querySelector('p').childNodes.length); //2 나오겠지 
+    console.log(document.querySelector('div').normalize());
+    console.log(document.querySelector('p').childNodes.length);
+</script>
+</html>
