@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+<script>
+    var divElem = document.createElement('div');
+    var docFrag = document.createDocumentFragment();
+
+    docFrag.append(divElem);
+
+    docFrag.querySelector('div').innerHTML = '<ul><li>foo</li><li>bar</li></ul>';
+
+    console.log(docFrag.querySelectorAll('li').length);
+
+    //document.querySelector('div').appendChild(docFrag);
+    
+    // 이게 붙이면 바로 메모리에서 없어지는거라 유지하고 싶으면 cloneNoe 이용
+    document.querySelector('div').appendChild(docFrag.cloneNode(true));
+
+</script>
+</html>
