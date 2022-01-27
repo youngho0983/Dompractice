@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style id="styleElement">
+        body{background-color: #fff;}
+    </style>  
+</head>
+<body>
+    <script>
+        var styleSheetRule = document.querySelector('#styleElement').sheet.cssRules
+
+        console.log(styleSheetRule);
+
+        var styleSheetPropertiesIncludeInherited = [] ;
+        for(var p in styleSheetRule) {
+            styleSheetPropertiesIncludeInherited.push(p);
+        }
+
+        var styleSheetRulePropertiesOnlyInherited = [];
+
+
+        for(var p in styleSheetRule) {
+            if (!styleSheetRule.hasOwnProperty(p)) {
+                styleSheetRulePropertiesOnlyInherited.push(p);
+            }
+        }
+        console.log(styleSheetPropertiesIncludeInherited)
+        console.log(styleSheetRulePropertiesOnlyInherited);
+    </script>
+</body>
+</html>

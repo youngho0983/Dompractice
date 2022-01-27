@@ -5,25 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style id="styleElement">
-    body{background-color: #fff;}
-</style>
+    <style id='styleElement'> 
+        p{color:blue;}
+        strong{color:green;}
+    </style>
 </head>
 <body>
     
+    <p>Hey <strong>Due</strong></p>
 </body>
 <script>
+    
     var styleSheet = document.querySelector('#styleElement').sheet;
 
-    console.log(Object.keys(styleSheet).sort());
-    var styleSheetPropertiesIncludedInherited = [];
-    for( p in styleSheet) {
-        styleSheetPropertiesIncludedInherited.push(p);
+    styleSheet.cssRules[0].style.color = 'red';
 
-    }
+    styleSheet.cssRules[1].style.color = 'purple';
 
-    console.log(styleSheetPropertiesIncludedInherited)
 
-    
+    console.log(styleSheet.cssRules[0].style.color)
+    console.log(styleSheet.cssRules[1].style.color)
+
 </script>
 </html>
